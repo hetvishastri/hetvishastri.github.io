@@ -17,4 +17,6 @@ You can find the source code for Jekyll at GitHub:
 
 [jekyll-organization]: https://github.com/jekyll -->
 Hi! This is Hetvi Shastri
-![Hetvi](./_site/images/IMG-20210605-WA0007.jpg)
+<!-- ![]({{page.image | relative_url}}) -->
+
+<img align="right" width="170" height="200" src="./images/hetvi.jpg">
