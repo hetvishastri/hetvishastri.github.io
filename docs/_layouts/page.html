@@ -3,20 +3,23 @@ layout: default
 ---
 <article class="post">
 
-  <div class="feature-image">
-    <img src="./assets/images/IMG_20180914_183321_570.jpg" alt="" class="feature-image">
-    <div class="text_over">
-      Hetvi &nbsp;Shastri
-    </div>
-  </div>
-
   <header class="post-header">
+    <div class="feature-image">
+
+    <img src="{{- page.image | relative_url -}}" alt="" class="feature-image">
+    <div class="text_over">
+      <!-- &nbsp;Hetvi &nbsp;&nbsp;Shastri -->
+      - IIT Gandhinagar
+    </div>
+    </div>
+
     <h1 class="post-title">{{ page.title | escape }}</h1>
   </header>
 
   <div class="post-content">
-    {{ content }}
-    hello world
+    <div style="text-align: justify">
+      {{ content }}
+    </div>
   </div>
 
 </article>

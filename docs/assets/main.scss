@@ -9,11 +9,18 @@
     height: 150px;
     object-fit: cover;
   }
-  .text_over{
+.text_over{
     color:white;
-    font-size: 70px;
+    font-size: 15px;
     position:absolute;
     // top:50%;
     // left:50%;
-    transform: translate(50%,-140%);
+    transform: translate(520%,-100%);
+  }
+
+.img-left {
+    width: 30%;
+    height: 70%;
+    float: right;
+    margin-left: 3em;
   }
