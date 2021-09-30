@@ -17,4 +17,4 @@ You can find the source code for Jekyll at GitHub:
 
 [jekyll-organization]: https://github.com/jekyll -->
 Hi! This is Hetvi Shastri
-![Hetvi](/_site/images/IMG-20210605-WA0007.jpg)
+![Hetvi](./_site/images/IMG-20210605-WA0007.jpg)
