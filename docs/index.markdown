@@ -1,6 +1,6 @@
 ---
 layout: page
-#title: About
+title: Home
 #rmalink: /about/
 ---
 
@@ -19,4 +19,4 @@ You can find the source code for Jekyll at GitHub:
 Hi! This is Hetvi Shastri
 
 
-<img align="right" width="170" height="200" src="./images/hetvi.jpg">
+<img align="right" width="170" height="200" src="./assets/images/hetvi.jpg">
