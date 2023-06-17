@@ -29,7 +29,7 @@ title: Home
   I got my B.Sc. from Staffordshire University with First Class honors in Computer Science. 
   Throughout my graduate studies, I spent several summers doing internships in industry, including Yahoo! Labs, Amazon, LinkedIn, and Facebook.
   </p> 
-</div> -->
+</div>  -->
 
 <!-- <div class="docs-section" id="prospective-students">  
   <h4>Prospective Students</h4>
@@ -39,8 +39,40 @@ title: Home
   If you are interested, please apply to the UW iSchool <a href="https://ischool.uw.edu/programs/phd/admissions" target="_blank">PhD program</a> and mention me in your application.
   If you have any questions, feel free to reach out by email!
   </p> 
-</div> -->
+</div>
 
+<!-- ========== News ========== -->
+<div class="docs-section" id="news">
+  <h5>News</h5>
+  <p>Scroll for more
+  <div class="scroll">
+    <style>
+      div.scroll {
+          margin: 1px;
+          width: 800px;
+          height: 300px;
+          overflow: auto;
+          text-align:justify;
+      }
+    </style>
+  <ul>
+    <li><b>Jun 2023:</b> GHC Scholar, scholarship offers women and non‑binary students the opportunity to attend the virtual Grace Hopper Celebration 2023</li>
+    <li><b>May 2023:</b> Awarded David W. Stemple Scholarship in Computing to provide support to a first‑year graduate student in Computer Science pursuing a Ph.D in Systems research</li>
+    <li><b>May 2023:</b> James Kurose Scholar, scholarship in Computer Science to provide support to an outstanding Computer Science graduate student</li>
+    <li><b>Nov 2022:</b> Presenting our <a href="https://dl.acm.org/doi/abs/10.1145/3563357.3564063">paper</a> on quantifying uncertainity in NILM at ACM Buildsys 2022.</li>
+    <li><b>Sep 2022:</b> <a href="https://dl.acm.org/doi/abs/10.1145/3493700.3493721">Paper</a> on quantifying uncertainity in NILM accepted at ACM Buildsys 2022 .</li>
+    <li><b>Sep 2022:</b> Started Phd at UMass Amherst computer science advised by <a href="https://people.cs.umass.edu/~shenoy/">Prof. Prashant Shenoy</a></li>
+    <li><b>Jan 2022:</b> Presenting our <a href="https://dl.acm.org/doi/abs/10.1145/3493700.3493721">paper</a> on Generative Adversarial Networks for fashion clothing at CODs COMAD 2022.</li>
+    <li><b>Jan 2022:</b> Started working as a Teaching Assistant for ML654 course, IITGn.</li>
+    <li><b>Nov 2021:</b> Presenting our <a href="https://dl.acm.org/doi/abs/10.1145/3486611.3486652">paper</a> on Neural network models for NILM at ACM Buildsys 2021.</li>
+    <li><b>Oct 2021:</b> Our paper on Generative Adversarial Networks for fashion clothing accepted at CODs COMAD 2022.</li>
+    <li><b>Sep 2021:</b> First paper on Neural network models for NILM accepted at ACM Buildsys 2021.</li>
+    <li><b>May 2021:</b> Started working on Non-Intrusive Load Monitoring at Sustainability Lab, IITGn advised by Prof Nipun Batra</li>
+    <li><b>May 2020:</b> Started working on ultrasound imaging at MUSE Lab,IITGn advised by Prof Himanshu Shekhar</li>
+    <li><b>Jul 2018:</b> Started Btech in Electrical Engineering at Indian Institue of Technology Gandhinagar</li>
+  </ul>
+  </div>
+</div>
 
 <!-- ========== PUBLICATIONS ========== -->
 <div class="docs-section" id="publications">
@@ -244,7 +276,7 @@ title: Home
 
   <div class="tab-content">
     <div class="tab-pane active" id="projects-ML">
-      {% assign selected_projects = site.data.blog.blogs | where: "ML", "y" %}
+      {% assign selected_projects = site.data.blogs.blogs | where: "ML", "y" %}
       {% for project in selected_projects %}
         {% assign index_modulo = forloop.index0 | modulo:3 %}
         {% if index_modulo == 0 %}
@@ -275,7 +307,7 @@ title: Home
     </div>
 
     <div class="tab-pane" id="projects-all">
-      {% for project in site.data.projects.projects %}
+      {% for project in site.data.blogs.blogs %}
         {% assign index_modulo = forloop.index0 | modulo:3 %}
         {% if index_modulo == 0 %}
           <div class="row">
