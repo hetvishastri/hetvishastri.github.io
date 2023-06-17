@@ -1,0 +1,26 @@
+
+papers:
+  - title: "'I do not know' quantifying uncertainty in neural network based approaches for non-intrusive load monitoring"
+    authors: "<b>Hetvi Shastri<sup>‡</sup></b>, Vibhuti Bansal<sup>‡</sup>, Rohit Khoiwal<sup>‡</sup>, Haikoo Khandor,Nipun Batra"
+    venue: "BuildSys 22: ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation."
+    paper_pdf: " assets/publications/2022_Buildsys_Uncertainity/paper.pdf"
+    code: "https://github.com/msaveski/twitter_perspective_taking"
+    video: "https://www.youtube.com/watch?v=wt0zuNb-9mo"
+    selected: y
+
+  - title: "Vastr-GAN: versatile apparel synthesised from text using a robust generative adversarial network"
+    authors: "<b>Hetvi Shastri<sup>‡</sup></b>, Dhruvi Lodhavia<sup>‡</sup>, Palak Purohit<sup>‡</sup>, Nipun Batra"
+    venue: "Cods COMAD 22: International Conference on Data Science & Management of Data"
+    paper_pdf: "assets/publications/2022_Cods_GAN/paper.pdf"
+    code: "https://github.com/Dhruvi-Lodhavia/Vastr-GAN"
+    selected: y
+
+  - title: "Neural network approaches and dataset parser for NILM toolkit"
+    authors: "<b>Hetvi Shastri</b>, Nipun Batra"
+    venue: "BuildSys 21: ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation."
+    paper_pdf: "assets/publications/2021_Buildsys_NILM/paper.pdf"
+    code: "https://github.com/msaveski/twitter_perspective_taking"
+    video: "https://www.youtube.com/watch?v=jHXBVaVFhl8&t=24835s"
+    selected: y
+
+
