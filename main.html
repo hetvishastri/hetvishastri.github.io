@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Full Name | Research Portfolio</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
+
+    <style>
+        /* Custom base styles */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Lora', serif;
+        }
+        /* Style for the scrollable lists to add a fade-out effect at the bottom */
+        .scroll-mask {
+          -webkit-mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
+          mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-800 dark:bg-slate-900 dark:text-slate-300 transition-colors duration-300">
+
+    <header class="bg-white/70 dark:bg-slate-900/70 backdrop-blur-lg sticky top-0 z-50 border-b border-slate-200 dark:border-slate-800">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-slate-900 dark:text-white hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors">Your Full Name</a>
+            <div class="hidden md:flex items-center space-x-8">
+                <div class="hidden md:flex space-x-8 items-center text-sm">
+                    <a href="#news" class="text-slate-700 dark:text-slate-300 hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors">News</a>
+                    <a href="#publications" class="text-slate-700 dark:text-slate-300 hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors">Publications</a>
+                    <a href="#research-projects" class="text-slate-700 dark:text-slate-300 hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors">Projects</a>
+                    <a href="#skills" class="text-slate-700 dark:text-slate-300 hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors">Skills</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#contact" class="bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-2 px-4 rounded-lg transition-colors text-sm">Contact</a>
+                    <button id="theme-toggle" type="button" class="text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700 focus:outline-none rounded-lg text-sm p-2.5">
+                        <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 5.05A1 1 0 003.636 6.464l.707.707a1 1 0 001.414-1.414l-.707-.707zM3 11a1 1 0 100-2H2a1 1 0 100 2h1zm7.536 2.464a1 1 0 01-1.414 0l-.707-.707a1 1 0 011.414-1.414l.707.707a1 1 0 010 1.414zM13.536 6.464a1 1 0 010-1.414l.707-.707a1 1 0 011.414 1.414l-.707.707a1 1 0 01-1.414 0z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                    </button>
+                </div>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-slate-800 dark:text-white focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2">
+            <a href="#news" class="block py-2 px-4 text-sm hover:bg-slate-100 dark:hover:bg-slate-700 rounded-md">News</a>
+            <a href="#publications" class="block py-2 px-4 text-sm hover:bg-slate-100 dark:hover:bg-slate-700 rounded-md">Publications</a>
+            <a href="#research-projects" class="block py-2 px-4 text-sm hover:bg-slate-100 dark:hover:bg-slate-700 rounded-md">Projects</a>
+            <a href="#skills" class="block py-2 px-4 text-sm hover:bg-slate-100 dark:hover:bg-slate-700 rounded-md">Skills</a>
+            <a href="#contact" class="block bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-2 px-4 rounded-lg transition-colors mt-2 text-center">Contact</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6">
+
+        <section id="about" class="py-24 md:py-32">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/3 flex-shrink-0 text-center">
+                    <img src="https://placehold.co/400x400/e2e8f0/334155?text=Your+Photo" 
+                         alt="A portrait of Your Full Name" 
+                         class="rounded-lg shadow-lg mx-auto w-64 h-64 md:w-80 md:h-80 object-cover border-4 border-slate-200 dark:border-slate-700">
+                </div>
+                <div class="md:w-2/3 text-lg text-slate-600 dark:text-slate-400">
+                    <h1 class="text-5xl md:text-6xl font-bold text-slate-900 dark:text-white leading-tight">Your Full Name</h1>
+                    <p class="mt-4 text-xl md:text-2xl text-slate-500 dark:text-slate-400 font-light">Ph.D. Candidate in Computer Science at [Your University]</p>
+                    <p class="mt-6 text-lg">
+                        My research lies at the intersection of machine learning and distributed systems, where I design and build robust, scalable, and efficient algorithms for real-world AI applications. I am particularly interested in the challenges of federated learning, model compression for edge devices, and building automated MLOps pipelines.
+                    </p>
+                    <div class="mt-8 flex gap-4 flex-wrap">
+                        <a href="#publications" class="bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-3 px-6 rounded-lg transition-colors">View Research</a>
+                        <a href="#" target="_blank" class="bg-slate-200 hover:bg-slate-300 dark:bg-slate-700 dark:hover:bg-slate-600 text-slate-800 dark:text-white font-bold py-3 px-6 rounded-lg transition-colors">Download CV</a>
+                   </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="news" class="py-20 border-t border-slate-200 dark:border-slate-800">
+            <h2 class="text-4xl font-bold text-slate-900 dark:text-white text-center mb-12">News</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="space-y-4 max-h-[20rem] overflow-y-auto pr-4 scroll-mask">
+                    <div class="flex items-start space-x-4">
+                        <p class="text-slate-500 dark:text-slate-400 font-mono text-sm flex-shrink-0 w-24">Jul 2025</p>
+                        <p class="text-slate-700 dark:text-slate-300">I will be presenting my work on scalable anomaly detection at NeurIPS 2024. See you in New Orleans!</p>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <p class="text-slate-500 dark:text-slate-400 font-mono text-sm flex-shrink-0 w-24">May 2025</p>
+                        <p class="text-slate-700 dark:text-slate-300">Our paper on efficient edge model serving was accepted to ASPLOS 2023.</p>
+                    </div>
+                     <div class="flex items-start space-x-4">
+                        <p class="text-slate-500 dark:text-slate-400 font-mono text-sm flex-shrink-0 w-24">Jan 2025</p>
+                        <p class="text-slate-700 dark:text-slate-300">Awarded the [Name of Fellowship or Award] for my research in distributed systems.</p>
+                    </div>
+                    <div class="flex items-start space-x-4">
+                        <p class="text-slate-500 dark:text-slate-400 font-mono text-sm flex-shrink-0 w-24">Dec 2024</p>
+                        <p class="text-slate-700 dark:text-slate-300">Our patent for a novel synchronization method in distributed ML has been issued!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="publications" class="py-20 border-t border-slate-200 dark:border-slate-800">
+            <h2 class="text-4xl font-bold text-slate-900 dark:text-white text-center mb-12">Publications & Patents</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="space-y-8 max-h-[30rem] overflow-y-auto pr-4 scroll-mask">
+                    <div class="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-lg border border-slate-200 dark:border-slate-800">
+                        <h3 class="text-xl font-semibold text-slate-900 dark:text-white">A Scalable System for Real-Time Anomaly Detection</h3>
+                        <p class="text-slate-600 dark:text-slate-400 mt-1"><strong>Your Full Name</strong>, Co-author Name, Another Co-author</p>
+                        <p class="text-slate-500 dark:text-slate-500 italic mt-1">Proceedings of the Conference on Neural Information Processing Systems (NeurIPS), 2024</p>
+                        <div class="mt-3 space-x-4">
+                            <a href="#" class="text-cyan-600 dark:text-cyan-400 hover:underline font-semibold">[PDF]</a>
+                            <a href="#" class="text-cyan-600 dark:text-cyan-400 hover:underline font-semibold">[DOI]</a>
+                            <a href="#" class="text-cyan-600 dark:text-cyan-400 hover:underline font-semibold">[Code]</a>
+                        </div>
+                    </div>
+                    <div class="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-lg border border-slate-200 dark:border-slate-800">
+                        <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Efficient Model Serving Architectures for Edge Devices</h3>
+                        <p class="text-slate-600 dark:text-slate-400 mt-1">Co-author Name, <strong>Your Full Name</strong></p>
+                        <p class="text-slate-500 dark:text-slate-500 italic mt-1">ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS), 2023</p>
+                        <div class="mt-3 space-x-4">
+                            <a href="#" class="text-cyan-600 dark:text-cyan-400 hover:underline font-semibold">[PDF]</a>
+                            <a href="#" class="text-cyan-600 dark:text-cyan-400 hover:underline font-semibold">[DOI]</a>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-2xl font-semibold text-slate-900 dark:text-white pt-8 border-t border-slate-200 dark:border-slate-700">Patents</h3>
+                        <ol class="mt-4 space-y-2 text-slate-600 dark:text-slate-400 pl-1">
+                            <li>
+                                <span class="font-mono text-sm">[P1]</span>
+                                <span class="font-semibold text-slate-700 dark:text-slate-300 ml-2">Method and Apparatus for Distributed Machine Learning Synchronization.</span>
+                                <p class="ml-10">Inventors: <strong>Your Full Name</strong>, Co-inventor Name. <em>U.S. Patent No. 12,345,678. Issued Jan 1, 2025.</em>
+                                <a href="#" class="text-cyan-600 dark:text-cyan-400 hover:underline font-semibold ml-2">[View]</a></p>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="research-projects" class="py-20 border-t border-slate-200 dark:border-slate-800">
+            <h2 class="text-4xl font-bold text-slate-900 dark:text-white text-center mb-12">Research Projects</h2>
+            <div class="max-w-6xl mx-auto">
+                <div class="max-h-[40rem] overflow-y-auto pr-4 scroll-mask">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Project 1 -->
+                        <div class="bg-slate-50 dark:bg-slate-800 rounded-lg shadow-md overflow-hidden transition-shadow hover:shadow-lg hover:shadow-cyan-500/10 dark:hover:shadow-cyan-500/20 flex flex-col border border-slate-200 dark:border-slate-800">
+                            <img src="https://placehold.co/600x400/e2e8f0/334155?text=Project+Visual" alt="Project visual for Distributed Training Framework" class="w-full h-48 object-cover">
+                            <div class="p-6 flex-grow flex flex-col">
+                                <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Distributed Training Framework</h3>
+                                <p class="text-slate-600 dark:text-slate-400 mb-4 flex-grow">An open-source framework for training large language models across hundreds of GPUs, focusing on communication efficiency and fault tolerance.</p>
+                                <div class="mt-auto">
+                                    <div class="flex flex-wrap gap-2 mb-4">
+                                        <span class="bg-slate-200 text-cyan-800 dark:bg-slate-700 dark:text-cyan-300 text-xs font-semibold px-2.5 py-1 rounded-full">PyTorch</span>
+                                        <span class="bg-slate-200 text-cyan-800 dark:bg-slate-700 dark:text-cyan-300 text-xs font-semibold px-2.5 py-1 rounded-full">gRPC</span>
+                                        <span class="bg-slate-200 text-cyan-800 dark:bg-slate-700 dark:text-cyan-300 text-xs font-semibold px-2.5 py-1 rounded-full">Kubernetes</span>
+                                    </div>
+                                    <a href="#" class="text-cyan-600 dark:text-cyan-400 hover:underline font-semibold">View on GitHub &rarr;</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Project 2 -->
+                        <div class="bg-slate-50 dark:bg-slate-800 rounded-lg shadow-md overflow-hidden transition-shadow hover:shadow-lg hover:shadow-cyan-500/10 dark:hover:shadow-cyan-500/20 flex flex-col border border-slate-200 dark:border-slate-800">
+                            <img src="https://placehold.co/600x400/e2e8f0/334155?text=Project+Visual" alt="Project visual for Federated Learning" class="w-full h-48 object-cover">
+                            <div class="p-6 flex-grow flex flex-col">
+                                <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Federated Learning Simulator</h3>
+                                <p class="text-slate-600 dark:text-slate-400 mb-4 flex-grow">A simulation environment for testing federated learning algorithms under various conditions of data heterogeneity and network constraints.</p>
+                                <div class="mt-auto">
+                                    <div class="flex flex-wrap gap-2 mb-4">
+                                        <span class="bg-slate-200 text-cyan-800 dark:bg-slate-700 dark:text-cyan-300 text-xs font-semibold px-2.5 py-1 rounded-full">Python</span>
+                                        <span class="bg-slate-200 text-cyan-800 dark:bg-slate-700 dark:text-cyan-300 text-xs font-semibold px-2.5 py-1 rounded-full">SimPy</span>
+                                        <span class="bg-slate-200 text-cyan-800 dark:bg-slate-700 dark:text-cyan-300 text-xs font-semibold px-2.5 py-1 rounded-full">TensorFlow</span>
+                                    </div>
+                                    <a href="#" class="text-cyan-600 dark:text-cyan-400 hover:underline font-semibold">View on GitHub &rarr;</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Project 3 -->
+                        <div class="bg-slate-50 dark:bg-slate-800 rounded-lg shadow-md overflow-hidden transition-shadow hover:shadow-lg hover:shadow-cyan-500/10 dark:hover:shadow-cyan-500/20 flex flex-col border border-slate-200 dark:border-slate-800">
+                           <img src="https://placehold.co/600x400/e2e8f0/334155?text=Project+Visual" alt="Project visual for Model Compression" class="w-full h-48 object-cover">
+                            <div class="p-6 flex-grow flex flex-col">
+                                <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Model Compression Toolkit</h3>
+                                <p class="text-slate-600 dark:text-slate-400 mb-4 flex-grow">A collection of pruning and quantization algorithms for reducing the size and latency of deep neural networks on edge devices.</p>
+                                <div class="mt-auto">
+                                    <div class="flex flex-wrap gap-2 mb-4">
+                                        <span class="bg-slate-200 text-cyan-800 dark:bg-slate-700 dark:text-cyan-300 text-xs font-semibold px-2.5 py-1 rounded-full">PyTorch</span>
+                                        <span class="bg-slate-200 text-cyan-800 dark:bg-slate-700 dark:text-cyan-300 text-xs font-semibold px-2.5 py-1 rounded-full">ONNX</span>
+                                        <span class="bg-slate-200 text-cyan-800 dark:bg-slate-700 dark:text-cyan-300 text-xs font-semibold px-2.5 py-1 rounded-full">TVM</span>
+                                    </div>
+                                    <a href="#" class="text-cyan-600 dark:text-cyan-400 hover:underline font-semibold">View on GitHub &rarr;</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="py-20 border-t border-slate-200 dark:border-slate-800">
+            <h2 class="text-4xl font-bold text-slate-900 dark:text-white text-center mb-12">Expertise</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="mb-8">
+                    <h3 class="text-2xl font-semibold text-cyan-600 dark:text-cyan-400 mb-4">Research Areas</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-lg font-medium px-4 py-2 rounded-md shadow-sm">Distributed ML Systems</span>
+                        <span class="bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-lg font-medium px-4 py-2 rounded-md shadow-sm">MLOps & Automation</span>
+                        <span class="bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-lg font-medium px-4 py-2 rounded-md shadow-sm">Efficient Deep Learning</span>
+                        <span class="bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-lg font-medium px-4 py-2 rounded-md shadow-sm">High-Performance Computing</span>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-cyan-600 dark:text-cyan-400 mb-4">Technical Skills</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-lg font-medium px-4 py-2 rounded-md shadow-sm">Python</span>
+                        <span class="bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-lg font-medium px-4 py-2 rounded-md shadow-sm">PyTorch/TensorFlow</span>
+                        <span class="bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-lg font-medium px-4 py-2 rounded-md shadow-sm">Go</span>
+                        <span class="bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-lg font-medium px-4 py-2 rounded-md shadow-sm">Docker & Kubernetes</span>
+                        <span class="bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-lg font-medium px-4 py-2 rounded-md shadow-sm">Cloud (AWS/GCP)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 border-t border-slate-200 dark:border-slate-800">
+             <h2 class="text-4xl font-bold text-slate-900 dark:text-white text-center mb-4">Contact</h2>
+             <p class="text-lg text-slate-600 dark:text-slate-400 mb-8 max-w-2xl mx-auto">
+                 Please feel free to reach out for collaborations or inquiries.
+             </p>
+             <div class="text-center">
+                <a href="mailto:your.email@university.edu" class="inline-block bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-3 px-8 rounded-lg transition-colors text-lg">
+                    Send Email
+                </a>
+             </div>
+             <div class="flex justify-center gap-6 mt-8">
+                <a href="#" class="text-slate-500 dark:text-slate-400 hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors">Google Scholar</a>
+                <a href="#" class="text-slate-500 dark:text-slate-400 hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors">LinkedIn</a>
+                <a href="#" class="text-slate-500 dark:text-slate-400 hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors">GitHub</a>
+             </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-50 dark:bg-slate-800/50 border-t border-slate-200 dark:border-slate-800">
+        <div class="container mx-auto px-6 py-4 text-center text-slate-500 dark:text-slate-500">
+            <p>&copy; 2025 Your Full Name. Last updated: July 27, 2025.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // --- Mobile Menu ---
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const navLinks = document.querySelectorAll('#mobile-menu a');
+
+            const toggleMenu = () => mobileMenu.classList.toggle('hidden');
+            
+            mobileMenuButton.addEventListener('click', toggleMenu);
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        toggleMenu();
+                    }
+                });
+            });
+
+            // --- Theme Toggler ---
+            const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+            const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+            const themeToggleButton = document.getElementById('theme-toggle');
+
+            // Function to set the theme
+            const setTheme = (isDark) => {
+                if (isDark) {
+                    document.documentElement.classList.add('dark');
+                    themeToggleLightIcon.classList.remove('hidden');
+                    themeToggleDarkIcon.classList.add('hidden');
+                    localStorage.setItem('color-theme', 'dark');
+                } else {
+                    document.documentElement.classList.remove('dark');
+                    themeToggleDarkIcon.classList.remove('hidden');
+                    themeToggleLightIcon.classList.add('hidden');
+                    localStorage.setItem('color-theme', 'light');
+                }
+            };
+
+            // Check for saved theme preference or system preference
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const savedTheme = localStorage.getItem('color-theme');
+
+            if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+                setTheme(true);
+            } else {
+                setTheme(false);
+            }
+
+            // Add click listener to the toggle button
+            themeToggleButton.addEventListener('click', function() {
+                const isCurrentlyDark = document.documentElement.classList.contains('dark');
+                setTheme(!isCurrentlyDark);
+            });
+        });
+    </script>
+</body>
+</html>
