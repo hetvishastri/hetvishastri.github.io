@@ -21,11 +21,6 @@
         h1, h2, h3, h4, h5, h6 {
             font-family: 'Lora', serif;
         }
-        /* Style for the scrollable lists to add a fade-out effect at the bottom
-        .scroll-mask {
-          -webkit-mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
-          mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
-        } */
     </style>
 </head>
 <body class="bg-white text-slate-800 dark:bg-slate-900 dark:text-slate-300 transition-colors duration-300">
@@ -75,84 +70,95 @@
                 <div class="md:w-2/3 text-lg text-slate-600 dark:text-slate-400">
                     <h1 class="text-5xl md:text-6xl font-bold text-slate-900 dark:text-white leading-tight">Hetvi Shastri</h1>
                     <p class="mt-4 text-xl md:text-2xl text-slate-500 dark:text-slate-400 font-light">Ph.D. Candidate in Computer Science at University of Massachusetts Amherst</p>
-                    <p class="mt-6 text-lg">
-                        <!-- My research lies at the intersection of machine learning and distributed systems, where I design and build robust, scalable, and efficient algorithms for real-world AI applications. I am particularly interested in the challenges of federated learning, model compression for edge devices, and building automated MLOps pipelines. -->
-                    </p>
-                    <!-- <div class="mt-8 flex gap-4 flex-wrap">
-                        <a href="#publications" class="bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-3 px-6 rounded-lg transition-colors">View Research</a>
-                        <a href="Resume_1 (1).pdf" target="_blank" class="bg-slate-200 hover:bg-slate-300 dark:bg-slate-700 dark:hover:bg-slate-600 text-slate-800 dark:text-white font-bold py-3 px-6 rounded-lg transition-colors">Download CV</a>
-                   </div> -->
                 </div>
             </div>
         </section>
-            <section id="publications" class="py-20 border-t border-slate-200 dark:border-slate-800">
-            <h2 class="text-4xl font-bold text-slate-900 dark:text-white text-center mb-12">Publications & Patents</h2>
-            <div class="max-w-4xl mx-auto">
-                <div class="space-y-8 max-h-[30rem] overflow-y-auto pr-4">
-                    <div class="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-lg border border-slate-200 dark:border-slate-800">
-                        <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Llm-driven auto configuration for transient iot device collaboration</h3>
-                        <p class="text-slate-600 dark:text-slate-400 mt-1"><strong>Hetvi Shastri</strong>, Walid A. Hanafy, Li Wu, David Irwin, Mani Srivastava, and Prashant Shenoy</p>
-                        <p class="text-slate-500 dark:text-slate-500 italic mt-1">2025</p>
+        
+        <!-- Combined News and Publications Section -->
+        <section class="py-20 border-t border-slate-200 dark:border-slate-800">
+            <div class="flex flex-col lg:flex-row gap-12">
+                
+                <!-- Left Column: News -->
+                <div id="news" class="w-full lg:w-1/2">
+                    <h2 class="text-4xl font-bold text-slate-900 dark:text-white text-center mb-12">News</h2>
+                    <div class="space-y-4 max-h-[34rem] overflow-y-auto pr-4">
+                        <div class="flex items-start space-x-4">
+                            <p class="text-slate-500 dark:text-slate-400 font-mono text-sm flex-shrink-0 w-24">Aug 2023</p>
+                            <p class="text-slate-700 dark:text-slate-300">Awarded travel grant for attending ACM SIGCOMM 2023 at New York.</p>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <p class="text-slate-500 dark:text-slate-400 font-mono text-sm flex-shrink-0 w-24">Jun 2023</p>
+                            <p class="text-slate-700 dark:text-slate-300">Selected for the prestigious GHC Student Scholarship, enabling participation at the virtual Grace Hopper Celebration 2023 (GHC 23).</p>
+                        </div>
+                         <div class="flex items-start space-x-4">
+                            <p class="text-slate-500 dark:text-slate-400 font-mono text-sm flex-shrink-0 w-24">May 2023</p>
+                            <p class="text-slate-700 dark:text-slate-300">Awarded the distinguished James Kurose Scholarship at UMass Amherst for exceptional achievements in Computer Science.</p>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <p class="text-slate-500 dark:text-slate-400 font-mono text-sm flex-shrink-0 w-24">May 2023</p>
+                            <p class="text-slate-700 dark:text-slate-300">Granted the esteemed David W. Stemple Scholarship at UMass Amherst in recognition of excellence in pursuing Ph.D. research in Systems.</p>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <p class="text-slate-500 dark:text-slate-400 font-mono text-sm flex-shrink-0 w-24">Nov 2021</p>
+                            <p class="text-slate-700 dark:text-slate-300">Awarded Conference Grant by IIT Gandhinagar for presenting at 8th ACM Buildsys 2021.</p>
+                        </div>
                     </div>
-                    <div class="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-lg border border-slate-200 dark:border-slate-800">
-                        <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Rethinking Collaboration Among Mobile Devices in IoT Environments</h3>
-                        <p class="text-slate-600 dark:text-slate-400 mt-1"><strong>Hetvi Shastri</strong>, Walid A. Hanafy, Li Wu, David Irwin, Mani Srivastava, and Prashant Shenoy</p>
-                        <p class="text-slate-500 dark:text-slate-500 italic mt-1">ACM SenSys 2025, Poster</p>
-                    </div>
-
-                    <div class="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-lg border border-slate-200 dark:border-slate-800">
-                        <h3 class="text-xl font-semibold text-slate-900 dark:text-white">ConnCast: Secure Connectivity Experience Sharing via Localized P2P Networks</h3>
-                        <p class="text-slate-600 dark:text-slate-400 mt-1"><strong>Hetvi Shastri</strong>, Akanksha Atrey, Andre Beck, Nirupama Ravi</p>
-                        <p class="text-slate-500 dark:text-slate-500 italic mt-1">US Patent</p>
-                    </div>
-                    <div class="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-lg border border-slate-200 dark:border-slate-800">
-                        <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Trust or bust: A survey of threats in decentralized wireless networks</h3>
-                        <p class="text-slate-600 dark:text-slate-400 mt-1"><strong>Hetvi Shastri</strong>, Akanksha Atrey, Andre Beck, and Nirupama Ravi</p>
-                        <p class="text-slate-500 dark:text-slate-500 italic mt-1">NDSS Symposium 2025, FutureG Workshop </p>
-                    </div>
-                    <div class="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-lg border border-slate-200 dark:border-slate-800">
-                        <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Vastr-gan: Versatile apparel synthesised from text using a robust generative adversarial network</h3>
-                        <p class="text-slate-600 dark:text-slate-400 mt-1"><strong>Hetvi Shastri</strong>, Dhruvi Lodhavia, Palak Purohit, Ronak Kaoshik, and Nipun Batra</p>
-                        <p class="text-slate-500 dark:text-slate-500 italic mt-1">ACM CODS-COMAD 2022</p>
-                    </div>
-                    <div class="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-lg border border-slate-200 dark:border-slate-800">
-                        <h3 class="text-xl font-semibold text-slate-900 dark:text-white">I do not know: Quantifying uncertainty in neural network based approaches for non-intrusive load monitoring</h3>
-                        <p class="text-slate-600 dark:text-slate-400 mt-1"><strong>Hetvi Shastri</strong>, Vibhuti Bansal, Rohit Khoiwal, Haikoo Khandor, and Nipun Batra</p>
-                        <p class="text-slate-500 dark:text-slate-500 italic mt-1">BuildSys 2022</p>
-                    </div>
-                    <div class="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-lg border border-slate-200 dark:border-slate-800">
-                        <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Neural network approaches and dataset parser for nilm toolkit</h3>
-                        <p class="text-slate-600 dark:text-slate-400 mt-1"><strong>Hetvi Shastri</strong> and Nipun Batra</p>
-                        <p class="text-slate-500 dark:text-slate-500 italic mt-1">BuildSys 2021</p>
-                    </div>
-
                 </div>
-            </div>
-        </section>
 
-        <section id="news" class="py-20 border-t border-slate-200 dark:border-slate-800">
-            <h2 class="text-4xl font-bold text-slate-900 dark:text-white text-center mb-12">News</h2>
-            <div class="max-w-4xl mx-auto">
-                <div class="space-y-4 max-h-[20rem] overflow-y-auto pr-4">
-                    <div class="flex items-start space-x-4">
-                        <p class="text-slate-500 dark:text-slate-400 font-mono text-sm flex-shrink-0 w-24">Aug 2023</p>
-                        <p class="text-slate-700 dark:text-slate-300">Awarded travel grant for attending ACM SIGCOMM 2023 at New York.</p>
-                    </div>
-                    <div class="flex items-start space-x-4">
-                        <p class="text-slate-500 dark:text-slate-400 font-mono text-sm flex-shrink-0 w-24">Jun 2023</p>
-                        <p class="text-slate-700 dark:text-slate-300">Selected for the prestigious GHC Student Scholarship, enabling participation at the virtual Grace Hopper Celebration 2023 (GHC 23).</p>
-                    </div>
-                     <div class="flex items-start space-x-4">
-                        <p class="text-slate-500 dark:text-slate-400 font-mono text-sm flex-shrink-0 w-24">May 2023</p>
-                        <p class="text-slate-700 dark:text-slate-300">Awarded the distinguished James Kurose Scholarship at UMass Amherst for exceptional achievements in Computer Science.</p>
-                    </div>
-                    <div class="flex items-start space-x-4">
-                        <p class="text-slate-500 dark:text-slate-400 font-mono text-sm flex-shrink-0 w-24">May 2023</p>
-                        <p class="text-slate-700 dark:text-slate-300">Granted the esteemed David W. Stemple Scholarship at UMass Amherst in recognition of excellence in pursuing Ph.D. research in Systems.</p>
-                    </div>
-                    <div class="flex items-start space-x-4">
-                        <p class="text-slate-500 dark:text-slate-400 font-mono text-sm flex-shrink-0 w-24">Nov 2021</p>
-                        <p class="text-slate-700 dark:text-slate-300">Awarded Conference Grant by IIT Gandhinagar for presenting at 8th ACM Buildsys 2021.</p>
+                <!-- Right Column: Publications & Patents -->
+                <div id="publications" class="w-full lg:w-1/2">
+                    <h2 class="text-4xl font-bold text-slate-900 dark:text-white text-center mb-12">Publications & Patents</h2>
+                    <div class="max-w-4xl mx-auto">
+                        <!-- Tab Navigation -->
+                        <div class="mb-8 flex justify-center border-b border-slate-200 dark:border-slate-700">
+                            <button id="publications-tab" type="button" class="py-4 px-6 block hover:text-cyan-500 dark:hover:text-cyan-400 focus:outline-none text-lg border-b-2 font-medium border-cyan-500 text-cyan-600 dark:text-cyan-400">Publications</button>
+                            <button id="patents-tab" type="button" class="py-4 px-6 block hover:text-cyan-500 dark:hover:text-cyan-400 focus:outline-none text-lg text-slate-500 dark:text-slate-400">Patents</button>
+                        </div>
+
+                        <!-- Tab Content -->
+                        <div id="publications-content">
+                            <div class="space-y-8 max-h-[30rem] overflow-y-auto pr-4">
+                                <div class="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-lg border border-slate-200 dark:border-slate-800">
+                                    <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Llm-driven auto configuration for transient iot device collaboration</h3>
+                                    <p class="text-slate-600 dark:text-slate-400 mt-1"><strong>Hetvi Shastri</strong>, Walid A. Hanafy, Li Wu, David Irwin, Mani Srivastava, and Prashant Shenoy</p>
+                                    <p class="text-slate-500 dark:text-slate-500 italic mt-1">2025</p>
+                                </div>
+                                <div class="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-lg border border-slate-200 dark:border-slate-800">
+                                    <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Rethinking Collaboration Among Mobile Devices in IoT Environments</h3>
+                                    <p class="text-slate-600 dark:text-slate-400 mt-1"><strong>Hetvi Shastri</strong>, Walid A. Hanafy, Li Wu, David Irwin, Mani Srivastava, and Prashant Shenoy</p>
+                                    <p class="text-slate-500 dark:text-slate-500 italic mt-1">ACM SenSys 2025, Poster</p>
+                                </div>
+                                <div class="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-lg border border-slate-200 dark:border-slate-800">
+                                    <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Trust or bust: A survey of threats in decentralized wireless networks</h3>
+                                    <p class="text-slate-600 dark:text-slate-400 mt-1"><strong>Hetvi Shastri</strong>, Akanksha Atrey, Andre Beck, and Nirupama Ravi</p>
+                                    <p class="text-slate-500 dark:text-slate-500 italic mt-1">NDSS Symposium 2025, FutureG Workshop </p>
+                                </div>
+                                <div class="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-lg border border-slate-200 dark:border-slate-800">
+                                    <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Vastr-gan: Versatile apparel synthesised from text using a robust generative adversarial network</h3>
+                                    <p class="text-slate-600 dark:text-slate-400 mt-1"><strong>Hetvi Shastri</strong>, Dhruvi Lodhavia, Palak Purohit, Ronak Kaoshik, and Nipun Batra</p>
+                                    <p class="text-slate-500 dark:text-slate-500 italic mt-1">ACM CODS-COMAD 2022</p>
+                                </div>
+                                <div class="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-lg border border-slate-200 dark:border-slate-800">
+                                    <h3 class="text-xl font-semibold text-slate-900 dark:text-white">I do not know: Quantifying uncertainty in neural network based approaches for non-intrusive load monitoring</h3>
+                                    <p class="text-slate-600 dark:text-slate-400 mt-1"><strong>Hetvi Shastri</strong>, Vibhuti Bansal, Rohit Khoiwal, Haikoo Khandor, and Nipun Batra</p>
+                                    <p class="text-slate-500 dark:text-slate-500 italic mt-1">BuildSys 2022</p>
+                                </div>
+                                <div class="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-lg border border-slate-200 dark:border-slate-800">
+                                    <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Neural network approaches and dataset parser for nilm toolkit</h3>
+                                    <p class="text-slate-600 dark:text-slate-400 mt-1"><strong>Hetvi Shastri</strong> and Nipun Batra</p>
+                                    <p class="text-slate-500 dark:text-slate-500 italic mt-1">BuildSys 2021</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="patents-content" class="hidden">
+                             <div class="space-y-8 max-h-[30rem] overflow-y-auto pr-4">
+                                <div class="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-lg border border-slate-200 dark:border-slate-800">
+                                    <h3 class="text-xl font-semibold text-slate-900 dark:text-white">ConnCast: Secure Connectivity Experience Sharing via Localized P2P Networks</h3>
+                                    <p class="text-slate-600 dark:text-slate-400 mt-1"><strong>Hetvi Shastri</strong>, Akanksha Atrey, Andre Beck, Nirupama Ravi</p>
+                                    <p class="text-slate-500 dark:text-slate-500 italic mt-1">US Patent</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -290,7 +296,6 @@
             const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
             const themeToggleButton = document.getElementById('theme-toggle');
 
-            // Function to set the theme
             const setTheme = (isDark) => {
                 if (isDark) {
                     document.documentElement.classList.add('dark');
@@ -305,7 +310,6 @@
                 }
             };
 
-            // Check for saved theme preference or system preference
             const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
             const savedTheme = localStorage.getItem('color-theme');
 
@@ -315,10 +319,43 @@
                 setTheme(false);
             }
 
-            // Add click listener to the toggle button
             themeToggleButton.addEventListener('click', function() {
                 const isCurrentlyDark = document.documentElement.classList.contains('dark');
                 setTheme(!isCurrentlyDark);
+            });
+
+            // --- Publications/Patents Tabs ---
+            const publicationsTab = document.getElementById('publications-tab');
+            const patentsTab = document.getElementById('patents-tab');
+            const publicationsContent = document.getElementById('publications-content');
+            const patentsContent = document.getElementById('patents-content');
+
+            publicationsTab.addEventListener('click', () => {
+                // Show publications
+                publicationsContent.classList.remove('hidden');
+                patentsContent.classList.add('hidden');
+
+                // Style active tab
+                publicationsTab.classList.add('border-cyan-500', 'text-cyan-600', 'dark:text-cyan-400');
+                publicationsTab.classList.remove('text-slate-500', 'dark:text-slate-400', 'border-transparent');
+                
+                // Style inactive tab
+                patentsTab.classList.remove('border-cyan-500', 'text-cyan-600', 'dark:text-cyan-400');
+                patentsTab.classList.add('text-slate-500', 'dark:text-slate-400', 'border-transparent');
+            });
+
+            patentsTab.addEventListener('click', () => {
+                // Show patents
+                patentsContent.classList.remove('hidden');
+                publicationsContent.classList.add('hidden');
+
+                // Style active tab
+                patentsTab.classList.add('border-cyan-500', 'text-cyan-600', 'dark:text-cyan-400');
+                patentsTab.classList.remove('text-slate-500', 'dark:text-slate-400', 'border-transparent');
+
+                // Style inactive tab
+                publicationsTab.classList.remove('border-cyan-500', 'text-cyan-600', 'dark:text-cyan-400');
+                publicationsTab.classList.add('text-slate-500', 'dark:text-slate-400', 'border-transparent');
             });
         });
     </script>
