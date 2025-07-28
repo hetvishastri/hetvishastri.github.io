@@ -18,7 +18,7 @@
         body {
             font-family: 'Inter', sans-serif;
         }
-        h1, h2, h3, h4, h5, h6 {
+        h1, h2, h3, h4, h5, h6, .tab-title {
             font-family: 'Lora', serif;
         }
     </style>
@@ -74,21 +74,18 @@
             </div>
         </section>
         
-        <!-- Combined News and Publications Section -->
+        <!-- Combined Publications and News Section -->
         <section class="py-20 border-t border-slate-200 dark:border-slate-800">
             <div class="flex flex-col lg:flex-row gap-12">
                 
-                <!--Left Column: Publications & Patents -->
-                <div id="publications" class="w-full lg:w-2/3">
-                    <h2 class="text-4xl font-bold text-slate-900 dark:text-white text-center mb-12">Publications & Patents</h2>
+                <!-- Left Column: Publications & Patents -->
+                <div id="publications" class="w-full lg:w-1/2">
                     <div class="max-w-4xl mx-auto">
-                        <!-- Tab Navigation -->
-                        <div class="mb-8 flex justify-center border-b border-slate-200 dark:border-slate-700">
-                            <button id="publications-tab" type="button" class="py-4 px-6 block hover:text-cyan-500 dark:hover:text-cyan-400 focus:outline-none text-lg border-b-2 font-medium border-cyan-500 text-cyan-600 dark:text-cyan-400">Publications</button>
-                            <button id="patents-tab" type="button" class="py-4 px-6 block hover:text-cyan-500 dark:hover:text-cyan-400 focus:outline-none text-lg text-slate-500 dark:text-slate-400">Patents</button>
+                        <div class="mb-12 flex border-b border-slate-200 dark:border-slate-700">
+                            <button id="publications-tab" type="button" class="tab-title py-4 px-1 block focus:outline-none text-4xl font-bold border-b-2 border-cyan-500 text-slate-900 dark:text-white mr-6">Publications</button>
+                            <button id="patents-tab" type="button" class="tab-title py-4 px-1 block focus:outline-none text-4xl font-bold text-slate-400 dark:text-slate-500 border-b-2 border-transparent">Patents</button>
                         </div>
 
-                        <!-- Tab Content -->
                         <div id="publications-content">
                             <div class="space-y-8 max-h-[30rem] overflow-y-auto pr-4">
                                 <div class="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-lg border border-slate-200 dark:border-slate-800">
@@ -134,8 +131,9 @@
                         </div>
                     </div>
                 </div>
+                
                 <!-- Right Column: News -->
-                <div id="news" class="w-full lg:w-1/3">
+                <div id="news" class="w-full lg:w-1/2">
                     <h2 class="text-4xl font-bold text-slate-900 dark:text-white text-center mb-12">News</h2>
                     <div class="space-y-4 max-h-[34rem] overflow-y-auto pr-4">
                         <div class="flex items-start space-x-4">
@@ -335,12 +333,12 @@
                 patentsContent.classList.add('hidden');
 
                 // Style active tab
-                publicationsTab.classList.add('border-cyan-500', 'text-cyan-600', 'dark:text-cyan-400');
-                publicationsTab.classList.remove('text-slate-500', 'dark:text-slate-400', 'border-transparent');
+                publicationsTab.classList.add('border-cyan-500', 'text-slate-900', 'dark:text-white');
+                publicationsTab.classList.remove('text-slate-400', 'dark:text-slate-500', 'border-transparent');
                 
                 // Style inactive tab
-                patentsTab.classList.remove('border-cyan-500', 'text-cyan-600', 'dark:text-cyan-400');
-                patentsTab.classList.add('text-slate-500', 'dark:text-slate-400', 'border-transparent');
+                patentsTab.classList.remove('border-cyan-500', 'text-slate-900', 'dark:text-white');
+                patentsTab.classList.add('text-slate-400', 'dark:text-slate-500', 'border-transparent');
             });
 
             patentsTab.addEventListener('click', () => {
@@ -349,12 +347,12 @@
                 publicationsContent.classList.add('hidden');
 
                 // Style active tab
-                patentsTab.classList.add('border-cyan-500', 'text-cyan-600', 'dark:text-cyan-400');
-                patentsTab.classList.remove('text-slate-500', 'dark:text-slate-400', 'border-transparent');
+                patentsTab.classList.add('border-cyan-500', 'text-slate-900', 'dark:text-white');
+                patentsTab.classList.remove('text-slate-400', 'dark:text-slate-500', 'border-transparent');
 
                 // Style inactive tab
-                publicationsTab.classList.remove('border-cyan-500', 'text-cyan-600', 'dark:text-cyan-400');
-                publicationsTab.classList.add('text-slate-500', 'dark:text-slate-400', 'border-transparent');
+                publicationsTab.classList.remove('border-cyan-500', 'text-slate-900', 'dark:text-white');
+                publicationsTab.classList.add('text-slate-400', 'dark:text-slate-500', 'border-transparent');
             });
         });
     </script>
