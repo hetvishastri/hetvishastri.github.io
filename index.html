@@ -32,6 +32,7 @@
                     <a href="#news" class="text-slate-700 dark:text-slate-300 hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors">News</a>
                     <a href="#publications" class="text-slate-700 dark:text-slate-300 hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors">Publications</a>
                     <a href="#research-projects" class="text-slate-700 dark:text-slate-300 hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors">Projects</a>
+                    <a href="#experience" class="text-slate-700 dark:text-slate-300 hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors">Experience</a>
                 </div>
                 <button id="theme-toggle" type="button" class="text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700 focus:outline-none rounded-lg text-sm p-2.5">
                     <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
@@ -49,6 +50,7 @@
             <a href="#news" class="block py-2 px-4 text-sm hover:bg-slate-100 dark:hover:bg-slate-700 rounded-md">News</a>
             <a href="#publications" class="block py-2 px-4 text-sm hover:bg-slate-100 dark:hover:bg-slate-700 rounded-md">Publications</a>
             <a href="#research-projects" class="block py-2 px-4 text-sm hover:bg-slate-100 dark:hover:bg-slate-700 rounded-md">Projects</a>
+            <a href="#experience" class="block py-2 px-4 text-sm hover:bg-slate-100 dark:hover:bg-slate-700 rounded-md">Experience</a>
         </div>
     </header>
 
@@ -79,11 +81,10 @@
                 <div class="md:w-2/3 text-lg text-slate-600 dark:text-slate-400">
                     <h1 class="text-5xl font-bold text-slate-900 dark:text-white leading-tight mb-6">About</h1>
                     <div class="space-y-4 text-lg">
-                        <p>I am a Ph.D. student in the Computer Science at the University of Massachusetts Amherst, 
-                        advised by <a href="https://people.cs.umass.edu/~shenoy/" class="text-cyan-600 dark:text-cyan-400 hover:underline">Prof. Prashant Shenoy</a>. My current research focuses on Foundation Models as a Service for dynamic IoT environments, exploring challenges in distributed systems and machine learning. 
-                        This work is in collaboration with <a href="https://www.ee.ucla.edu/mani-srivastava/" class="text-cyan-600 dark:text-cyan-400 hover:underline">Prof. Mani Srivastava's</a> lab at UCLA.</p>
-                        <p> Before joining UMass, I earned my B.Tech. in Electrical Engineering with a minor in Computer Science from the Indian Institute of Technology, Gandhinagar. Previously, I have worked with <a href="https://nipunbatra.github.io/" class="text-cyan-600 dark:text-cyan-400 hover:underline">Prof. Nipun Batra</a> and <a href="https://labs.iitgn.ac.in/muselaboratory/himanshushekhar/" class="text-cyan-600 dark:text-cyan-400 hover:underline">Prof. Himanshu Shekhar</a>.</p> 
-                        <p>Broadly, my research interests spans Distributed Systems, Machine Learning, and Internet of Things (IoT) with a focus on building systems that are scalable, and intelligent.</p>
+                        <p class="text-2xl font-medium text-slate-900 dark:text-white" style="font-family: 'Lora', serif;">Foundation models are powerful, but serving them at scale is all about tradeoffs. I build the systems that get those tradeoffs right.</p>
+                        <p>I'm a Ph.D. student in Computer Science at UMass Amherst, advised by <a href="https://people.cs.umass.edu/~shenoy/" class="text-cyan-600 dark:text-cyan-400 hover:underline">Prof. Prashant Shenoy</a>, and I collaborate with <a href="https://www.ee.ucla.edu/mani-srivastava/" class="text-cyan-600 dark:text-cyan-400 hover:underline">Prof. Mani Srivastava's</a> lab at UCLA. My work balances <strong class="text-slate-800 dark:text-slate-200">fairness and efficiency</strong> when many tasks share one model, <strong class="text-slate-800 dark:text-slate-200">correctness and efficiency</strong> in stateful generative media workflows, and <strong class="text-slate-800 dark:text-slate-200">modularity and scalability</strong> in composable model pipelines.</p>
+                        <p>I've taken these ideas into industry too: as a summer intern at <strong class="text-slate-800 dark:text-slate-200">Dolby Labs</strong>, I built cross-modal caching for iterative GenAI workflows, and at <strong class="text-slate-800 dark:text-slate-200">Nokia Bell Labs</strong>, I worked on trust in decentralized wireless networks. Both led to patent applications.</p>
+                        <p>Before UMass, I earned my B.Tech. in Electrical Engineering (minor in CS) at IIT Gandhinagar, working with <a href="https://nipunbatra.github.io/" class="text-cyan-600 dark:text-cyan-400 hover:underline">Prof. Nipun Batra</a> and <a href="https://labs.iitgn.ac.in/muselaboratory/himanshushekhar/" class="text-cyan-600 dark:text-cyan-400 hover:underline">Prof. Himanshu Shekhar</a>.</p>
                     </div>
                 </div>
             </div>
@@ -102,9 +103,14 @@
                         <div id="publications-content">
                             <div class="space-y-8 max-h-[30rem] overflow-y-auto pr-4">
                                 <div class="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-lg border border-slate-200 dark:border-slate-800">
-                                    <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Llm-driven auto configuration for transient iot device collaboration</h3>
+                                    <h3 class="text-xl font-semibold text-slate-900 dark:text-white">FMTK: A Modular Toolkit for Composable Time Series Foundation Model Pipelines</h3>
+                                    <p class="text-slate-600 dark:text-slate-400 mt-1"><strong>Hetvi Shastri</strong>, Pragya Sharma, Walid A. Hanafy, Mani Srivastava, and Prashant Shenoy</p>
+                                    <p class="text-slate-500 dark:text-slate-500 italic mt-1">NeurIPS 2025, Workshop on Recent Advances in Time Series Foundation Models</p>
+                                </div>
+                                <div class="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-lg border border-slate-200 dark:border-slate-800">
+                                    <h3 class="text-xl font-semibold text-slate-900 dark:text-white">LLM-Driven Auto Configuration for Transient IoT Device Collaboration</h3>
                                     <p class="text-slate-600 dark:text-slate-400 mt-1"><strong>Hetvi Shastri</strong>, Walid A. Hanafy, Li Wu, David Irwin, Mani Srivastava, and Prashant Shenoy</p>
-                                    <p class="text-slate-500 dark:text-slate-500 italic mt-1">2025</p>
+                                    <p class="text-slate-500 dark:text-slate-500 italic mt-1">ACM/IEEE SEC 2025</p>
                                 </div>
                                 <div class="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-lg border border-slate-200 dark:border-slate-800">
                                     <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Rethinking Collaboration Among Mobile Devices in IoT Environments</h3>
@@ -112,33 +118,38 @@
                                     <p class="text-slate-500 dark:text-slate-500 italic mt-1">ACM SenSys 2025, Poster</p>
                                 </div>
                                 <div class="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-lg border border-slate-200 dark:border-slate-800">
-                                    <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Trust or bust: A survey of threats in decentralized wireless networks</h3>
+                                    <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Trust or Bust: A Survey of Threats in Decentralized Wireless Networks</h3>
                                     <p class="text-slate-600 dark:text-slate-400 mt-1"><strong>Hetvi Shastri</strong>, Akanksha Atrey, Andre Beck, and Nirupama Ravi</p>
                                     <p class="text-slate-500 dark:text-slate-500 italic mt-1">NDSS Symposium 2025, FutureG Workshop </p>
                                 </div>
                                 <div class="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-lg border border-slate-200 dark:border-slate-800">
-                                    <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Vastr-gan: Versatile apparel synthesised from text using a robust generative adversarial network</h3>
-                                    <p class="text-slate-600 dark:text-slate-400 mt-1"><strong>Hetvi Shastri</strong>, Dhruvi Lodhavia, Palak Purohit, Ronak Kaoshik, and Nipun Batra</p>
-                                    <p class="text-slate-500 dark:text-slate-500 italic mt-1">ACM CODS-COMAD 2022</p>
-                                </div>
-                                <div class="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-lg border border-slate-200 dark:border-slate-800">
-                                    <h3 class="text-xl font-semibold text-slate-900 dark:text-white">I do not know: Quantifying uncertainty in neural network based approaches for non-intrusive load monitoring</h3>
+                                    <h3 class="text-xl font-semibold text-slate-900 dark:text-white">I Do Not Know: Quantifying Uncertainty in Neural Network Based Approaches for Non-Intrusive Load Monitoring</h3>
                                     <p class="text-slate-600 dark:text-slate-400 mt-1"><strong>Hetvi Shastri</strong>, Vibhuti Bansal, Rohit Khoiwal, Haikoo Khandor, and Nipun Batra</p>
-                                    <p class="text-slate-500 dark:text-slate-500 italic mt-1">BuildSys 2022</p>
+                                    <p class="text-slate-500 dark:text-slate-500 italic mt-1">ACM BuildSys 2022 &middot; <a href="https://dl.acm.org/doi/abs/10.1145/3563357.3564063" target="_blank" class="not-italic text-cyan-600 dark:text-cyan-400 hover:underline">Paper</a></p>
                                 </div>
                                 <div class="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-lg border border-slate-200 dark:border-slate-800">
-                                    <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Neural network approaches and dataset parser for nilm toolkit</h3>
+                                    <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Vastr-GAN: Versatile Apparel Synthesised from Text Using a Robust Generative Adversarial Network</h3>
+                                    <p class="text-slate-600 dark:text-slate-400 mt-1"><strong>Hetvi Shastri</strong>, Dhruvi Lodhavia, Palak Purohit, Ronak Kaoshik, and Nipun Batra</p>
+                                    <p class="text-slate-500 dark:text-slate-500 italic mt-1">ACM CODS-COMAD 2022 &middot; <a href="https://dl.acm.org/doi/abs/10.1145/3493700.3493721" target="_blank" class="not-italic text-cyan-600 dark:text-cyan-400 hover:underline">Paper</a></p>
+                                </div>
+                                <div class="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-lg border border-slate-200 dark:border-slate-800">
+                                    <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Neural Network Approaches and Dataset Parser for NILM Toolkit</h3>
                                     <p class="text-slate-600 dark:text-slate-400 mt-1"><strong>Hetvi Shastri</strong> and Nipun Batra</p>
-                                    <p class="text-slate-500 dark:text-slate-500 italic mt-1">BuildSys 2021</p>
+                                    <p class="text-slate-500 dark:text-slate-500 italic mt-1">ACM BuildSys 2021 &middot; <a href="https://dl.acm.org/doi/abs/10.1145/3486611.3486652" target="_blank" class="not-italic text-cyan-600 dark:text-cyan-400 hover:underline">Paper</a></p>
                                 </div>
                             </div>
                         </div>
                         <div id="patents-content" class="hidden">
                              <div class="space-y-8 max-h-[30rem] overflow-y-auto pr-4">
                                 <div class="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-lg border border-slate-200 dark:border-slate-800">
+                                    <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Stateful Cross-Modal Caching for Iterative GenAI Workflows</h3>
+                                    <p class="text-slate-600 dark:text-slate-400 mt-1">Dolby Labs</p>
+                                    <p class="text-slate-500 dark:text-slate-500 italic mt-1">US Patent Application (in process)</p>
+                                </div>
+                                <div class="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-lg border border-slate-200 dark:border-slate-800">
                                     <h3 class="text-xl font-semibold text-slate-900 dark:text-white">ConnCast: Secure Connectivity Experience Sharing via Localized P2P Networks</h3>
-                                    <p class="text-slate-600 dark:text-slate-400 mt-1"><strong>Hetvi Shastri</strong>, Akanksha Atrey, Andre Beck, Nirupama Ravi</p>
-                                    <p class="text-slate-500 dark:text-slate-500 italic mt-1">US Patent</p>
+                                    <p class="text-slate-600 dark:text-slate-400 mt-1"><strong>Hetvi Shastri</strong>, Akanksha Atrey, Andre Beck, and Nirupama Ravi</p>
+                                    <p class="text-slate-500 dark:text-slate-500 italic mt-1">Nokia Bell Labs &middot; US Patent Application (in process)</p>
                                 </div>
                             </div>
                         </div>
@@ -149,8 +160,32 @@
                     <h2 class="text-4xl font-bold text-slate-900 dark:text-white text-center mb-10">News</h2>
                     <div class="space-y-4 max-h-[34rem] overflow-y-auto pr-4">
                         <div class="flex items-start space-x-4">
+                            <p class="text-slate-500 dark:text-slate-400 font-mono text-sm flex-shrink-0 w-24">Jun 2026</p>
+                            <p class="text-slate-700 dark:text-slate-300">Starting Ph.D. Research Internship at Dolby Labs, working on stateful cross-modal caching for iterative GenAI workflows!!</p>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <p class="text-slate-500 dark:text-slate-400 font-mono text-sm flex-shrink-0 w-24">Jun 2026</p>
+                            <p class="text-slate-700 dark:text-slate-300">Reviewer for S3 workshop, MobiCom 2026.</p>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <p class="text-slate-500 dark:text-slate-400 font-mono text-sm flex-shrink-0 w-24">Apr 2026</p>
+                            <p class="text-slate-700 dark:text-slate-300">Artifact Evaluator for OSDI 2026.</p>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <p class="text-slate-500 dark:text-slate-400 font-mono text-sm flex-shrink-0 w-24">Dec 2025</p>
+                            <p class="text-slate-700 dark:text-slate-300">Presenting FMTK at the Recent Advances in Time Series Foundation Models workshop, NeurIPS 2025!!</p>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <p class="text-slate-500 dark:text-slate-400 font-mono text-sm flex-shrink-0 w-24">Dec 2025</p>
+                            <p class="text-slate-700 dark:text-slate-300">Presenting our paper on LLM-driven auto configuration for transient IoT device collaboration at ACM/IEEE SEC 2025, with a student travel grant. Also serving as a student volunteer!</p>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <p class="text-slate-500 dark:text-slate-400 font-mono text-sm flex-shrink-0 w-24">2025</p>
+                            <p class="text-slate-700 dark:text-slate-300">Received the Invention Filing Award from Nokia Bell Labs for the ConnCast patent application.</p>
+                        </div>
+                        <div class="flex items-start space-x-4">
                             <p class="text-slate-500 dark:text-slate-400 font-mono text-sm flex-shrink-0 w-24">Aug 2025</p>
-                            <p class="text-slate-700 dark:text-slate-300">Reviewer for S3 workshop, Mobicom 2025.</p>
+                            <p class="text-slate-700 dark:text-slate-300">Reviewer for S3 workshop, MobiCom 2025.</p>
                         </div>
                         <div class="flex items-start space-x-4">
                             <p class="text-slate-500 dark:text-slate-400 font-mono text-sm flex-shrink-0 w-24">Aug 2025</p>
@@ -170,7 +205,7 @@
                         </div>
                         <div class="flex items-start space-x-4">
                             <p class="text-slate-500 dark:text-slate-400 font-mono text-sm flex-shrink-0 w-24">Feb 2025</p>
-                            <p class="text-slate-700 dark:text-slate-300">ConnCast Patent Accepted!!</p>
+                            <p class="text-slate-700 dark:text-slate-300">ConnCast patent accepted for filing at Nokia Bell Labs!!</p>
                         </div>
                         <div class="flex items-start space-x-4">
                             <p class="text-slate-500 dark:text-slate-400 font-mono text-sm flex-shrink-0 w-24">Jan 2025</p>
@@ -198,11 +233,11 @@
                         </div>        
                         <div class="flex items-start space-x-4">
                             <p class="text-slate-500 dark:text-slate-400 font-mono text-sm flex-shrink-0 w-24">Nov 2022</p>
-                            <p class="text-slate-700 dark:text-slate-300">Presenting our <a href="https://dl.acm.org/doi/abs/10.1145/3563357.3564063" class="text-cyan-600 dark:text-cyan-400 hover:underline">paper</a> on quantifying uncertainity in NILM at ACM Buildsys 2022.</p>
+                            <p class="text-slate-700 dark:text-slate-300">Presenting our <a href="https://dl.acm.org/doi/abs/10.1145/3563357.3564063" class="text-cyan-600 dark:text-cyan-400 hover:underline">paper</a> on quantifying uncertainty in NILM at ACM BuildSys 2022.</p>
                         </div>
                         <div class="flex items-start space-x-4">
                             <p class="text-slate-500 dark:text-slate-400 font-mono text-sm flex-shrink-0 w-24">Sep 2022</p>
-                            <p class="text-slate-700 dark:text-slate-300"><a href="https://dl.acm.org/doi/abs/10.1145/3493700.3493721" class="text-cyan-600 dark:text-cyan-400 hover:underline">Paper</a> on quantifying uncertainity in NILM accepted at ACM Buildsys 2022. </p>
+                            <p class="text-slate-700 dark:text-slate-300"><a href="https://dl.acm.org/doi/abs/10.1145/3563357.3564063" class="text-cyan-600 dark:text-cyan-400 hover:underline">Paper</a> on quantifying uncertainty in NILM accepted at ACM BuildSys 2022.</p>
                         </div>               
                         <div class="flex items-start space-x-4">
                             <p class="text-slate-500 dark:text-slate-400 font-mono text-sm flex-shrink-0 w-24">Sep 2022</p>
@@ -255,23 +290,35 @@
         <section id="research-projects" class="py-16 border-t border-slate-200 dark:border-slate-800">
             <h2 class="text-4xl font-bold text-slate-900 dark:text-white text-center mb-10">Research Projects</h2>
             <div class="max-w-6xl mx-auto space-y-12">
-                <!-- Project 1 -->
                 <div class="flex flex-col md:flex-row gap-8 items-start border-b border-slate-200 dark:border-slate-700 pb-10 mb-10 last:border-b-0 last:mb-0 last:pb-0">
-                    <img src="./projects/fmtk_architecture.jpg" alt="Project visual for Foundational Model as a Service" class="w-full md:w-1/3 rounded-lg object-cover">
                     <div class="flex-grow">
-                        <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Modular Toolkit for Time Series Foundation Model Pipelines</h3>
-                        <p class="text-slate-600 dark:text-slate-400">Open-source toolkit to address the lack of standardized tooling in Time Series Foundation Model (TSFM)
-                        research, which was hindering reproducible and large-scale experimentation.</p>
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Virtualizing Foundation Models for Efficient Multi-Task Serving</h3>
+                        <p class="text-slate-600 dark:text-slate-400">Existing foundation model serving systems replicate heavyweight backbones per task, wasting GPU memory and
+                        losing batching opportunities across the many downstream tasks a single foundation model can serve. We built a serving system with a
+                        virtual foundation model (vFM) abstraction and a batch-aware fair-queueing scheduler, letting many customized tasks share one backbone
+                        with per-task isolation and cross-task batching. It reduces latency by up to 80% vs. spatial partitioning and 33.3% vs. best-effort
+                        co-location, and hosts 6x more tasks at cluster scale across 7 FM backbones (16 variants) and 92 downstream tasks.</p>
                     </div>
                 </div>
                 <div class="flex flex-col md:flex-row gap-8 items-start border-b border-slate-200 dark:border-slate-700 pb-10 mb-10 last:border-b-0 last:mb-0 last:pb-0">
-                    <img src="./projects/dewi-network-setup.png" alt="Project visual for LLM-Driven Auto Configuration" class="w-full md:w-1/3 rounded-lg object-cover">
+                    <img src="./projects/fmtk_architecture.jpg" alt="Architecture of the FMTK toolkit" class="w-full md:w-1/3 rounded-lg object-cover">
                     <div class="flex-grow">
-                        <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Adversarial Attacks in Trustless Decentralized Wireless Networks</h3>
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">FMTK: Modular Toolkit for Time Series Foundation Model Pipelines</h3>
+                        <p class="text-slate-600 dark:text-slate-400">Time Series Foundation Model (TSFM) research relies on ad hoc, model-specific pipelines that hinder
+                        modularity, reproducibility, and large-scale experimentation. FMTK provides a unified API for plug-and-play TSFM pipelines,
+                        generalizable across domains and demonstrated on ECG, PPG, and energy tasks with PyTorch and PEFT.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row gap-8 items-start border-b border-slate-200 dark:border-slate-700 pb-10 mb-10 last:border-b-0 last:mb-0 last:pb-0">
+                    <img src="./projects/dewi-network-setup.png" alt="Decentralized wireless network testbed setup" class="w-full md:w-1/3 rounded-lg object-cover">
+                    <div class="flex-grow">
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Attacks in Trustless Decentralized Wireless Networks</h3>
                         <p class="text-slate-600 dark:text-slate-400">
-                        There is need for trust in decentralized wireless networks, where individual entities offer subscriptionless
-                        connectivity services in exchange for monetary reward. We developed a comprehensive taxonomy of attacks and conducted simulations of provider-driven attacks that could lead to up to 394% monetary
-                        profit for malicious actors. Proposed a system ConnCast, a peer-to-peer (P2P) social for real-time connectivity experience sharing. 
+                        Decentralized wireless networks, where individual entities offer subscriptionless connectivity in exchange for monetary
+                        reward, lack mechanisms for trust. We developed a taxonomy of attacks and simulated provider-driven attacks with TC/netem and Nginx
+                        on a Raspberry Pi testbed, showing up to 394% monetary profit for malicious actors. We proposed ConnCast, a super-peer-based P2P
+                        framework for real-time connectivity experience sharing that uses proofs of network connectivity (PoNC) and proofs of experience (PoE)
+                        to prevent adversarial provider behavior. (Nokia Bell Labs internship)
                         </p>
                     </div>
                 </div>
@@ -280,9 +327,10 @@
                     <img src="./projects/collabiot.jpg" alt="Project visual for LLM-Driven Auto Configuration" class="w-full md:w-1/3 rounded-lg object-cover">
                     <div class="flex-grow">
                         <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">LLM-Driven Auto Configuration for Transient IoT Device Collaboration</h3>
-                        <p class="text-slate-600 dark:text-slate-400">A system that uses LLM-driven natural language processing to generate fine-grained access
-                        control policies from user intent, employs capability-based access control for secure authorization, and leverages
-                        lightweight proxies for hardware-independent enforcement.</p>
+                        <p class="text-slate-600 dark:text-slate-400">Transient IoT setups face device heterogeneity, fine-grained access control, and non-expert usability
+                        challenges. We built a system that uses an LLM-driven pipeline (Ollama, PydanticAI) to generate fine-grained access control policies
+                        from user intent, enforces them with capability-based JWTs, and uses lightweight async proxies with token-bucket rate limiting for
+                        hardware-independent enforcement.</p>
                     </div>
                 </div>
                 <!-- Project 3 -->
@@ -313,7 +361,65 @@
             </div>
         </section>
 
-        <section id="contact-footer" class="py-16 border-t border-slate-200 dark:border-slate-800">
+        <section id="experience" class="py-16 border-t border-slate-200 dark:border-slate-800">
+            <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-12">
+                <div>
+                    <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-6">Experience</h2>
+                    <div class="space-y-5">
+                        <div>
+                            <h3 class="font-semibold text-slate-900 dark:text-white">Dolby Labs</h3>
+                            <p class="text-slate-600 dark:text-slate-400">Ph.D. Research Intern</p>
+                            <p class="text-slate-500 font-mono text-sm">Jun 2026 &ndash; Oct 2026</p>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-slate-900 dark:text-white">University of Massachusetts Amherst</h3>
+                            <p class="text-slate-600 dark:text-slate-400">Research Assistant, LASS Lab</p>
+                            <p class="text-slate-500 font-mono text-sm">Sep 2022 &ndash; Present</p>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-slate-900 dark:text-white">Nokia Bell Labs</h3>
+                            <p class="text-slate-600 dark:text-slate-400">Decentralized Systems Intern</p>
+                            <p class="text-slate-500 font-mono text-sm">Jun 2024 &ndash; Aug 2024</p>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-slate-900 dark:text-white">IIT Gandhinagar</h3>
+                            <p class="text-slate-600 dark:text-slate-400">Undergraduate Researcher</p>
+                            <p class="text-slate-500 font-mono text-sm">Sep 2018 &ndash; Aug 2022</p>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mt-10 mb-3">Teaching</h3>
+                    <ul class="space-y-2 text-slate-600 dark:text-slate-400">
+                        <li><span class="font-semibold text-slate-800 dark:text-slate-200">UMass Amherst:</span> Distributed and Operating Systems, Computer Systems, Programming</li>
+                        <li><span class="font-semibold text-slate-800 dark:text-slate-200">IIT Gandhinagar:</span> Machine Learning (Grad)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-6">Awards &amp; Honors</h2>
+                    <ul class="space-y-3 text-slate-600 dark:text-slate-400">
+                        <li><span class="font-semibold text-slate-800 dark:text-slate-200">Student Travel Grant</span>, ACM/IEEE SEC 2025</li>
+                        <li><span class="font-semibold text-slate-800 dark:text-slate-200">Invention Filing Award</span>, Nokia Bell Labs, 2025</li>
+                        <li><span class="font-semibold text-slate-800 dark:text-slate-200">Student Travel Grant</span>, ACM SIGCOMM 2023</li>
+                        <li><span class="font-semibold text-slate-800 dark:text-slate-200">Grace Hopper Celebration Scholarship</span>, GHC 2023</li>
+                        <li><span class="font-semibold text-slate-800 dark:text-slate-200">James Kurose Scholarship</span>, UMass Amherst, 2023</li>
+                        <li><span class="font-semibold text-slate-800 dark:text-slate-200">David W. Stemple Scholarship</span> for Systems Research, UMass Amherst, 2023</li>
+                        <li><span class="font-semibold text-slate-800 dark:text-slate-200">Conference Grant</span>, BuildSys 2021, IIT Gandhinagar</li>
+                        <li><span class="font-semibold text-slate-800 dark:text-slate-200">Dean's List</span> (3 semesters), IIT Gandhinagar</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-6">Service</h2>
+                    <ul class="space-y-3 text-slate-600 dark:text-slate-400">
+                        <li><span class="font-semibold text-slate-800 dark:text-slate-200">Artifact Evaluator:</span> OSDI 2026, EuroSys 2026</li>
+                        <li><span class="font-semibold text-slate-800 dark:text-slate-200">Reviewer:</span> ACM S3 Workshop (MobiCom 2026, MobiCom 2025)</li>
+                        <li><span class="font-semibold text-slate-800 dark:text-slate-200">Student Volunteer:</span> ACM/IEEE SEC 2025</li>
+                        <li><span class="font-semibold text-slate-800 dark:text-slate-200">Guest Lecturer:</span> Machine Learning (Grad), UMass Turing Program (high school students)</li>
+                        <li><span class="font-semibold text-slate-800 dark:text-slate-200">Open Source:</span> <a href="https://github.com/nilmtk/nilmtk" target="_blank" class="text-cyan-600 dark:text-cyan-400 hover:underline">NILMTK</a>, <a href="https://github.com/nilmtk/nilmtk-contrib" target="_blank" class="text-cyan-600 dark:text-cyan-400 hover:underline">NILMTK-Contrib</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-footer"class="py-16 border-t border-slate-200 dark:border-slate-800">
              <h2 class="text-4xl font-bold text-slate-900 dark:text-white text-center mb-4">Contact</h2>
              <p class="text-lg text-slate-600 dark:text-slate-400 mb-8 max-w-2xl mx-auto text-center">
                  Please feel free to reach out for collaborations or inquiries.
@@ -329,7 +435,7 @@
 
     <footer class="bg-slate-50 dark:bg-slate-800/50 border-t border-slate-200 dark:border-slate-800">
         <div class="container mx-auto px-6 py-4 text-center text-slate-500 dark:text-slate-500">
-            <p>&copy; 2025 Hetvi Shastri. Last updated: July 27, 2025.</p>
+            <p>&copy; 2026 Hetvi Shastri. Last updated: October 14, 2026.</p>
         </div>
     </footer>
 
