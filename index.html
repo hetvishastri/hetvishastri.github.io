@@ -71,6 +71,8 @@
                          alt="A portrait of Hetvi Shastri" 
                          class="rounded-full shadow-lg mx-auto w-64 h-64 object-cover border-4 border-slate-200 dark:border-slate-700">
                     <h2 class="mt-6 text-4xl font-bold text-slate-900 dark:text-white">Hetvi Shastri</h2>
+                    <p class="mt-2 text-slate-600 dark:text-slate-400">Ph.D. Student, UMass Amherst</p>
+                    <p class="mt-3 text-sm text-slate-500 dark:text-slate-400 leading-relaxed">ML Systems &middot; Foundation Model Serving &middot; Generative AI Infrastructure &middot; Edge &amp; IoT</p>
                     <div class="mt-4 flex justify-center gap-4">
                         <a href="mailto:hshastri@umass.edu" class="text-slate-500 dark:text-slate-400 hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors" aria-label="Email">
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/></svg>
@@ -89,10 +91,14 @@
                 <div class="md:w-2/3 text-lg text-slate-600 dark:text-slate-400">
                     <h1 class="text-5xl font-bold text-slate-900 dark:text-white leading-tight mb-6">About</h1>
                     <div class="space-y-4 text-lg">
-                        <p class="text-2xl font-medium text-slate-900 dark:text-white" style="font-family: 'Lora', serif;">Foundation models are powerful, but serving them at scale is all about tradeoffs. I build the systems that get those tradeoffs right.</p>
-                        <p>I'm a Ph.D. student in Computer Science at UMass Amherst, advised by <a href="https://people.cs.umass.edu/~shenoy/" class="text-cyan-600 dark:text-cyan-400 hover:underline">Prof. Prashant Shenoy</a>, and I collaborate with <a href="https://www.ee.ucla.edu/mani-srivastava/" class="text-cyan-600 dark:text-cyan-400 hover:underline">Prof. Mani Srivastava's</a> lab at UCLA. My work balances <strong class="text-slate-800 dark:text-slate-200">fairness and efficiency</strong> when many tasks share one model, <strong class="text-slate-800 dark:text-slate-200">correctness and efficiency</strong> in stateful generative media workflows, and <strong class="text-slate-800 dark:text-slate-200">modularity and scalability</strong> in composable model pipelines.</p>
-                        <p>I've taken these ideas into industry too: as a summer intern at <strong class="text-slate-800 dark:text-slate-200">Dolby Labs</strong>, I built cross-modal caching for iterative GenAI workflows, and at <strong class="text-slate-800 dark:text-slate-200">Nokia Bell Labs</strong>, I worked on trust in decentralized wireless networks. Both led to patent applications.</p>
-                        <p>Before UMass, I earned my B.Tech. in Electrical Engineering (minor in CS) at IIT Gandhinagar, working with <a href="https://nipunbatra.github.io/" class="text-cyan-600 dark:text-cyan-400 hover:underline">Prof. Nipun Batra</a> and <a href="https://labs.iitgn.ac.in/muselaboratory/himanshushekhar/" class="text-cyan-600 dark:text-cyan-400 hover:underline">Prof. Himanshu Shekhar</a>.</p>
+                        <p>I'm a Ph.D. student in Computer Science at UMass Amherst, advised by <a href="https://people.cs.umass.edu/~shenoy/" target="_blank" class="text-cyan-600 dark:text-cyan-400 hover:underline">Prof. Prashant Shenoy</a>. I also collaborate with <a href="https://www.davidirwin.info/" target="_blank" class="text-cyan-600 dark:text-cyan-400 hover:underline">Prof. David Irwin</a> at UMass and <a href="https://www.ee.ucla.edu/mani-srivastava/" target="_blank" class="text-cyan-600 dark:text-cyan-400 hover:underline">Prof. Mani Srivastava's</a> lab at UCLA.</p>
+                        <p>I build systems that make foundation models practical to deploy at scale. My work focuses on:</p>
+                        <ul class="space-y-3 list-disc pl-6 marker:text-cyan-500">
+                            <li><strong class="text-slate-800 dark:text-slate-200">Sharing one foundation model across many tasks.</strong> FMplex gives every task its own virtual copy of a model while they all share one physical backbone, hosting up to 6x more tasks with up to 80% lower latency (<a href="https://arxiv.org/abs/2606.09643" target="_blank" class="text-cyan-600 dark:text-cyan-400 hover:underline">arXiv '26</a>). FMTK makes time-series foundation model pipelines composable and reproducible in a few lines of code (<a href="https://neurips.cc/virtual/2025/130442" target="_blank" class="text-cyan-600 dark:text-cyan-400 hover:underline">NeurIPS '25 Workshop</a>).</li>
+                            <li><strong class="text-slate-800 dark:text-slate-200">Reusing work in generative AI workflows.</strong> At Dolby Labs, I worked on reusing KV caches across modalities and user iterations, so refining a generated video or speech clip doesn't mean starting over.</li>
+                            <li><strong class="text-slate-800 dark:text-slate-200">Bringing LLMs to the edge.</strong> CollabIoT lets devices that visit a new environment, like a guest's phone in a smart home, collaborate securely: an LLM turns the user's intent into fine-grained access policies, enforced by lightweight proxies (<a href="https://lass.cs.umass.edu/papers/pdf/sec25-llm_autoconfig.pdf" target="_blank" class="text-cyan-600 dark:text-cyan-400 hover:underline">SEC '25</a>, <a href="https://dl.acm.org/doi/10.1145/3715014.3724065" target="_blank" class="text-cyan-600 dark:text-cyan-400 hover:underline">SenSys '25</a>).</li>
+                        </ul>
+                        <p>I've interned at <strong class="text-slate-800 dark:text-slate-200">Dolby Labs</strong> and <strong class="text-slate-800 dark:text-slate-200">Nokia Bell Labs</strong> (trust in decentralized wireless networks). Before UMass, I earned my B.Tech. in Electrical Engineering (minor in CS) at IIT Gandhinagar, working with <a href="https://nipunbatra.github.io/" target="_blank" class="text-cyan-600 dark:text-cyan-400 hover:underline">Prof. Nipun Batra</a> and <a href="https://labs.iitgn.ac.in/muselaboratory/himanshushekhar/" target="_blank" class="text-cyan-600 dark:text-cyan-400 hover:underline">Prof. Himanshu Shekhar</a>.</p>
                     </div>
                 </div>
             </div>
@@ -111,24 +117,29 @@
                         <div id="publications-content">
                             <div class="space-y-8 max-h-[30rem] overflow-y-auto pr-4">
                                 <div class="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-lg border border-slate-200 dark:border-slate-800">
+                                    <h3 class="text-xl font-semibold text-slate-900 dark:text-white">FMplex: Model Virtualization for Serving Extensible Foundation Models</h3>
+                                    <p class="text-slate-600 dark:text-slate-400 mt-1"><strong>Hetvi Shastri</strong>, Pragya Sharma, Walid A. Hanafy, David Irwin, Mani Srivastava, and Prashant Shenoy</p>
+                                    <p class="text-slate-500 dark:text-slate-500 italic mt-1">arXiv 2026 &middot; <a href="https://arxiv.org/abs/2606.09643" target="_blank" class="not-italic text-cyan-600 dark:text-cyan-400 hover:underline">Paper</a></p>
+                                </div>
+                                <div class="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-lg border border-slate-200 dark:border-slate-800">
                                     <h3 class="text-xl font-semibold text-slate-900 dark:text-white">FMTK: A Modular Toolkit for Composable Time Series Foundation Model Pipelines</h3>
                                     <p class="text-slate-600 dark:text-slate-400 mt-1"><strong>Hetvi Shastri</strong>, Pragya Sharma, Walid A. Hanafy, Mani Srivastava, and Prashant Shenoy</p>
-                                    <p class="text-slate-500 dark:text-slate-500 italic mt-1">NeurIPS 2025, Workshop on Recent Advances in Time Series Foundation Models</p>
+                                    <p class="text-slate-500 dark:text-slate-500 italic mt-1">NeurIPS 2025, Workshop on Recent Advances in Time Series Foundation Models &middot; <a href="https://arxiv.org/abs/2512.01038" target="_blank" class="not-italic text-cyan-600 dark:text-cyan-400 hover:underline">Paper</a> &middot; <a href="https://github.com/umassos/FMTK" target="_blank" class="not-italic text-cyan-600 dark:text-cyan-400 hover:underline">Code</a></p>
                                 </div>
                                 <div class="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-lg border border-slate-200 dark:border-slate-800">
                                     <h3 class="text-xl font-semibold text-slate-900 dark:text-white">LLM-Driven Auto Configuration for Transient IoT Device Collaboration</h3>
                                     <p class="text-slate-600 dark:text-slate-400 mt-1"><strong>Hetvi Shastri</strong>, Walid A. Hanafy, Li Wu, David Irwin, Mani Srivastava, and Prashant Shenoy</p>
-                                    <p class="text-slate-500 dark:text-slate-500 italic mt-1">ACM/IEEE SEC 2025</p>
+                                    <p class="text-slate-500 dark:text-slate-500 italic mt-1">ACM/IEEE SEC 2025 &middot; <a href="https://lass.cs.umass.edu/papers/pdf/sec25-llm_autoconfig.pdf" target="_blank" class="not-italic text-cyan-600 dark:text-cyan-400 hover:underline">Paper</a></p>
                                 </div>
                                 <div class="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-lg border border-slate-200 dark:border-slate-800">
                                     <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Rethinking Collaboration Among Mobile Devices in IoT Environments</h3>
                                     <p class="text-slate-600 dark:text-slate-400 mt-1"><strong>Hetvi Shastri</strong>, Walid A. Hanafy, Li Wu, David Irwin, Mani Srivastava, and Prashant Shenoy</p>
-                                    <p class="text-slate-500 dark:text-slate-500 italic mt-1">ACM SenSys 2025, Poster</p>
+                                    <p class="text-slate-500 dark:text-slate-500 italic mt-1">ACM SenSys 2025 &middot; <a href="https://dl.acm.org/doi/10.1145/3715014.3724065" target="_blank" class="not-italic text-cyan-600 dark:text-cyan-400 hover:underline">Paper</a></p>
                                 </div>
                                 <div class="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-lg border border-slate-200 dark:border-slate-800">
                                     <h3 class="text-xl font-semibold text-slate-900 dark:text-white">Trust or Bust: A Survey of Threats in Decentralized Wireless Networks</h3>
                                     <p class="text-slate-600 dark:text-slate-400 mt-1"><strong>Hetvi Shastri</strong>, Akanksha Atrey, Andre Beck, and Nirupama Ravi</p>
-                                    <p class="text-slate-500 dark:text-slate-500 italic mt-1">NDSS Symposium 2025, FutureG Workshop </p>
+                                    <p class="text-slate-500 dark:text-slate-500 italic mt-1">NDSS Symposium 2025, FutureG Workshop &middot; <a href="https://arxiv.org/abs/2512.00023" target="_blank" class="not-italic text-cyan-600 dark:text-cyan-400 hover:underline">Paper</a></p>
                                 </div>
                                 <div class="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-lg border border-slate-200 dark:border-slate-800">
                                     <h3 class="text-xl font-semibold text-slate-900 dark:text-white">I Do Not Know: Quantifying Uncertainty in Neural Network Based Approaches for Non-Intrusive Load Monitoring</h3>
@@ -300,7 +311,7 @@
             <div class="max-w-6xl mx-auto space-y-12">
                 <div class="flex flex-col md:flex-row gap-8 items-start border-b border-slate-200 dark:border-slate-700 pb-10 mb-10 last:border-b-0 last:mb-0 last:pb-0">
                     <div class="flex-grow">
-                        <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Virtualizing Foundation Models for Efficient Multi-Task Serving</h3>
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">FMplex: Virtualizing Foundation Models for Efficient Multi-Task Serving</h3>
                         <p class="text-slate-600 dark:text-slate-400">Existing foundation model serving systems replicate heavyweight backbones per task, wasting GPU memory and
                         losing batching opportunities across the many downstream tasks a single foundation model can serve. We built a serving system with a
                         virtual foundation model (vFM) abstraction and a batch-aware fair-queueing scheduler, letting many customized tasks share one backbone
